@@ -1,0 +1,113 @@
+body {
+    background: #181a1b;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #e8e6e3;
+}
+
+.page_content {
+    padding-top: 150px;
+}
+
+/* ПОЛОСА ПРОКРУТКИ */
+
+::-webkit-scrollbar {
+    width: 10px; /* Ширина */
+}
+    
+::-webkit-scrollbar-thumb {
+    background-color: #5b6367; /* Цвет полосы */
+    border-radius: 6px; /* Закругление */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #202324; /* Цвет фона, где нет полосы */
+}
+
+/* ПОЛОСА ПРОКРУТКИ */
+
+.block-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.text-1 {
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 70px;
+}
+
+.image-1 {
+    padding-right: 70px;
+    flex: 1;
+    text-align: right;
+}
+
+.image-1 img {
+    max-width: 80%;
+    height: auto;
+}
+
+.block-2 {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.text-2 {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 70px;
+}
+
+.image-2 {
+    padding-left: 70px;
+    flex: 1;
+    text-align: left;
+}
+
+.image-2 img {
+    max-width: 70%;
+    height: auto;
+}
+
+.block-3 {
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.block-3 h2 {
+    text-align: center;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 800% 0;
+    }
+}
+
+hr.glowing-line {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    animation: glowing 3s linear infinite;
+}
+
